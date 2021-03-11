@@ -1,0 +1,44 @@
+/* html {
+  box-sizing: inherit;
+}
+
+section {
+  box-sizing: inherit;
+  margin: auto;
+  width: 250px;
+  height: 250px;
+  border: springgreen solid;
+  border-style: dotted;
+}
+
+h1 {
+  text-align: center;
+}
+
+p {
+  box-sizing: border-box;
+  text-align: center;
+  width: 199% = 0px;
+  border: 3px solid blue;
+  padding: 20px;
+}
+ */
+
+html {
+    box-sizing: inherit;
+}
+
+section {
+    width: 250px;
+    height: 250px;
+    border: dotted #23CA85;
+    margin: auto;
+    text-align: center;
+}
+
+p {
+    width: 100%;
+    padding: 20px;
+    border: solid #0936CA;
+    box-sizing: border-box;
+}
