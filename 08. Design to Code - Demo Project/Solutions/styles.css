@@ -1,0 +1,191 @@
+@import url('reset.css');
+@import url('typography.css');
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;    
+}
+
+header p {
+    display: flex;
+    align-items: center;
+
+    padding: 0.9rem;
+
+    color: #FFFFFF;
+    background-image: linear-gradient(to right, #20546c, #617a91, #99a3b5, #cecfd9, #ffffff);
+    text-shadow: 2px 2px 1px #20546C;
+}
+
+header nav ul {
+    display: flex;
+}
+
+header nav ul li a {
+    /* Display block will allow inline elements to have padding-top and bottom */
+    display: block;
+
+    font-weight: bold;
+    text-decoration: none;
+
+    padding: 1rem;
+
+    color: #20546C;
+}
+
+header nav ul li a:hover {
+    background: #20546C;
+    color: #FFFFFF;
+}
+
+header p img {
+    width: 26px;
+    height: 26px;
+
+    margin: 0 0.2rem;
+}
+
+/* Main */
+/* First section */
+main section:nth-child(1) {
+    text-align: center;
+
+    padding: 10rem 0;
+
+    color: #FFFFFF;
+
+    /* Using linear gradient to darken picture so the text can be read easy */
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)), 
+                url('images/header-picture.png') no-repeat center center; 
+    background-size: cover;
+
+    text-shadow: 2px 2px 1px #20546C;
+}
+
+main section:nth-child(3) h3::after,
+main section:nth-child(2) h3::after,
+main section:nth-child(1) h1::after {
+    display: block;
+    content: '';
+
+    width: 60px;
+    height: 2px;
+
+    margin: 0.8rem auto;
+
+    background: #20546C;
+}
+
+main section:nth-child(1) h1::after {
+    background: #FFFFFF;
+}
+
+main section:nth-child(1) p,
+main section:nth-child(2) {
+    width: 50%;
+
+    margin: 0 auto;
+}
+
+/* Second Section */
+main section:nth-child(2) {
+    text-align: center;
+
+    padding: 3rem 0;
+
+    color: #20546C;
+}
+
+main section:nth-child(2) button {
+    font-weight: bold;
+
+    padding: 0.8rem 1rem;
+    margin-top: 1.5rem;
+
+    border: 2px solid #20546C;
+    border-radius: 0.5rem;
+
+    color: #FFFFFF;
+    background: #20546C;
+}
+
+main section:nth-child(2) button:hover {
+    cursor: pointer;
+
+    color: #20546C;
+    background: transparent;
+}
+
+/* Third Section */
+main section:nth-child(3) {
+    text-align: center;
+    text-shadow: 0.25px 0.25px 0.25px #000;
+
+    padding-top: 3rem;
+
+    color: #20546C;
+
+    background-color: #e8e6e6;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 80' width='80' height='80'%3E%3Cpath fill='%2320546c' fill-opacity='0.20' d='M14 16H9v-2h5V9.87a4 4 0 1 1 2 0V14h5v2h-5v15.95A10 10 0 0 0 23.66 27l-3.46-2 8.2-2.2-2.9 5a12 12 0 0 1-21 0l-2.89-5 8.2 2.2-3.47 2A10 10 0 0 0 14 31.95V16zm40 40h-5v-2h5v-4.13a4 4 0 1 1 2 0V54h5v2h-5v15.95A10 10 0 0 0 63.66 67l-3.47-2 8.2-2.2-2.88 5a12 12 0 0 1-21.02 0l-2.88-5 8.2 2.2-3.47 2A10 10 0 0 0 54 71.95V56zm-39 6a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm40-40a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM15 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm40 40a2 2 0 1 0 0-4 2 2 0 0 0 0 4z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+main section:nth-child(3) img {
+    width: 5rem;
+    height: 5rem;
+}
+
+main section:nth-child(3) ul {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+
+    width: 90%;
+    margin: 0 auto;
+}
+
+main section:nth-child(3) ul li {
+    width: 20%;
+    padding-bottom: 3rem;
+}
+
+main section:nth-child(3) ul li h5 {
+    padding-bottom: 0.4rem;
+}
+
+main section:nth-child(3) ul li p {
+    font-style: italic;
+}
+
+/* footer */
+footer {
+    text-align: center;
+
+    padding: 0.6rem 0;
+
+    color: #FFFFFF;
+    background: #20546C;
+}
+
+@media screen and (max-width: 800px) {
+    header {
+        display: block;
+    }
+
+    header p {
+        justify-content: center;
+    }
+
+    header nav ul {
+        display: block;
+        text-align: center;
+    }
+
+    main section:nth-child(1) {
+        padding: 5rem 0;
+    }
+
+    main section:nth-child(3) ul li {
+        width: 45%;
+    }
+}
